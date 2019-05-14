@@ -1,2 +1,0 @@
-# EdgarWebsite
-React Personal Website
