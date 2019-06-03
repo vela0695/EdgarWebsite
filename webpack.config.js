@@ -17,6 +17,10 @@ module.exports = {
         }
       },
       {
+        test: /\.(css|less)$/,
+        use: ["style-loader", "css-loader"]
+      },
+      {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loader: [
           "file-loader?hash=sha512&digest=hex&name=[hash].[ext]",

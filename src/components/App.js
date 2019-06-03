@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import HeaderAnimation from "./HeaderAnimation";
 import Header from "./Header";
+import About from "./About";
+//import "../main.css";
 
 class App extends Component {
   render() {
@@ -9,8 +11,9 @@ class App extends Component {
         <div>
           <Header />
         </div>
+        <HeaderAnimation />
         <div>
-          <HeaderAnimation />
+          <About />
         </div>
       </div>
     );

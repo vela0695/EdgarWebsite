@@ -9,6 +9,11 @@ export default class Header extends Component {
   }
 
   render() {
-    return <div ref={element => (this.threeRootElement = element)} />;
+    return (
+      <div
+        className="cool3D"
+        ref={element => (this.threeRootElement = element)}
+      />
+    );
   }
 }
