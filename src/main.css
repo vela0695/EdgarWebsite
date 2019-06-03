@@ -1,22 +1,22 @@
 /* Coolors for the haeder bar */
-.MuiAppBar-colorPrimary-18 {
+/* .MuiAppBar-colorPrimary-18 {
   color: snow !important;
   background-color: lightblue !important;
-}
+} */
 
 /* Override the font and size from material UI */
-.MuiTypography-h6-86 {
+/* .MuiTypography-h6-86 {
   font-size: 1.9em !important;
   font-family: cursive !important;
-}
+} */
 
 /* Nav bar removing white space and making it stay on scroll */
-.MuiAppBar-positionStatic-15 {
+/* .MuiAppBar-positionStatic-15 {
   position: fixed !important;
   top: 0;
   overflow: hidden;
   left: 0;
-}
+} */
 
 /* 3D image */
 .cool3D {
