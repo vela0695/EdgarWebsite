@@ -6,6 +6,8 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import Pong from "./Pong.png";
+import chasingTheEnd from "./chasingTheEnd.png";
 
 function Projects() {
   return (
@@ -18,7 +20,7 @@ function Projects() {
               component="img"
               alt="Chasing the End"
               height="200"
-              image="/src/components/chasingTheEnd.png"
+              image={chasingTheEnd}
               title="Contemplative Reptile"
             />
             <CardContent>
@@ -49,7 +51,7 @@ function Projects() {
               component="img"
               alt="Chasing the End"
               height="200"
-              image="/src/components/Pong.png"
+              image={Pong}
               title="Contemplative Reptile"
             />
             <CardContent>
