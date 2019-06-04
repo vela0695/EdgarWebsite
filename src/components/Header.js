@@ -10,9 +10,6 @@ import Menu from "@material-ui/core/Menu";
 import { fade } from "@material-ui/core/styles/colorManipulator";
 import { withStyles } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
-import AccountCircle from "@material-ui/icons/AccountCircle";
-import MailIcon from "@material-ui/icons/Mail";
-import NotificationsIcon from "@material-ui/icons/Notifications";
 import MoreIcon from "@material-ui/icons/MoreVert";
 import { SocialIcon } from "react-social-icons";
 import "../main.css";
@@ -56,7 +53,8 @@ const styles = theme => ({
 class PrimarySearchAppBar extends React.Component {
   state = {
     anchorEl: null,
-    mobileMoreAnchorEl: null
+    mobileMoreAnchorEl: null,
+    showIcons: false
   };
 
   handleProfileMenuOpen = event => {
@@ -69,10 +67,23 @@ class PrimarySearchAppBar extends React.Component {
   };
 
   handleMobileMenuOpen = event => {
+    console.log(event);
     this.setState({ mobileMoreAnchorEl: event.currentTarget });
   };
 
-  handleMobileMenuClose = () => {
+  handleMobileMenuClose = type => {
+    console.log(type);
+    if (type == 1) {
+      window.open("https://github.com/vela0695");
+    }
+    if (type == 2) {
+      window.open(
+        "https://www.linkedin.com/in/edgar-velazquez-colin-7b946415b?trk=people-guest_profile-result-card_result-card_full-click"
+      );
+    }
+    if (type == 3) {
+      window.open("mailto:edgarvelzz23@gmail.com");
+    }
     this.setState({ mobileMoreAnchorEl: null });
   };
 
@@ -97,33 +108,34 @@ class PrimarySearchAppBar extends React.Component {
 
     const renderMobileMenu = (
       <Menu
+        disableAutoFocusItem={true}
         anchorEl={mobileMoreAnchorEl}
         anchorOrigin={{ vertical: "top", horizontal: "right" }}
         transformOrigin={{ vertical: "top", horizontal: "right" }}
         open={isMobileMenuOpen}
         onClose={this.handleMenuClose}
       >
-        <MenuItem onClick={this.handleMobileMenuClose}>
-          <IconButton color="inherit">
-            <Badge badgeContent={4} color="secondary">
-              <MailIcon />
-            </Badge>
-          </IconButton>
-          <p>Messages</p>
+        <MenuItem onClick={() => this.handleMobileMenuClose(1)}>
+          <SocialIcon
+            url="https://github.com/vela0695"
+            style={{ height: 45, width: 45 }}
+          />
+          <p>GitHub</p>
         </MenuItem>
-        <MenuItem onClick={this.handleMobileMenuClose}>
-          <IconButton color="inherit">
-            <Badge badgeContent={11} color="secondary">
-              <NotificationsIcon />
-            </Badge>
-          </IconButton>
-          <p>Notifications</p>
+        <MenuItem onClick={() => this.handleMobileMenuClose(2)}>
+          <SocialIcon
+            style={{ height: 45, width: 45 }}
+            url="https://www.linkedin.com/in/edgar-velazquez-colin-7b946415b?trk=people-guest_profile-result-card_result-card_full-click"
+          />
+          <p>LinkedIn</p>
         </MenuItem>
-        <MenuItem onClick={this.handleProfileMenuOpen}>
-          <IconButton color="inherit">
-            <AccountCircle />
-          </IconButton>
-          <p>Profile</p>
+        <MenuItem onClick={() => this.handleMobileMenuClose(3)}>
+          <SocialIcon
+            style={{ height: 45, width: 45 }}
+            url="mailto:edgarvelzz23@gmail.com"
+            network="email"
+          />
+          <p>Contact Me</p>
         </MenuItem>
       </Menu>
     );
@@ -132,13 +144,16 @@ class PrimarySearchAppBar extends React.Component {
       <div className={classes.root}>
         <AppBar position="static" style={{ backgroundColor: "lightblue" }}>
           <Toolbar>
+            {/*
+             Will take care of this once i have the content on the page
             <IconButton
               className={classes.menuButton}
               color="inherit"
               aria-label="Open drawer"
+              onClick={this.handleMobileMenuOpen}
             >
               <MenuIcon />
-            </IconButton>
+            </IconButton> */}
             <Typography
               className={classes.title}
               variant="h6"
@@ -150,13 +165,16 @@ class PrimarySearchAppBar extends React.Component {
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
               <div style={{ padding: "5px" }}>
-                <SocialIcon url="http://facebook.com" />
+                <SocialIcon url="https://github.com/vela0695" />
               </div>
               <div style={{ padding: "5px" }}>
-                <SocialIcon url="https://github.com/" />
+                <SocialIcon url="https://www.linkedin.com/in/edgar-velazquez-colin-7b946415b?trk=people-guest_profile-result-card_result-card_full-click" />
               </div>
               <div style={{ padding: "5px" }}>
-                <SocialIcon url="https://www.linkedin.com/" />
+                <SocialIcon
+                  url="mailto:edgarvelzz23@gmail.com"
+                  network="email"
+                />
               </div>
             </div>
             <div className={classes.sectionMobile}>
@@ -170,7 +188,7 @@ class PrimarySearchAppBar extends React.Component {
             </div>
           </Toolbar>
         </AppBar>
-        {renderMenu}
+        {/* {renderMenu} */}
         {renderMobileMenu}
       </div>
     );

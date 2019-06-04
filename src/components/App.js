@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import HeaderAnimation from "./HeaderAnimation";
 import Header from "./Header";
 import About from "./About";
+import Projects from "./Projects";
 //import "../main.css";
 
 class App extends Component {
@@ -12,8 +13,11 @@ class App extends Component {
           <Header />
         </div>
         <HeaderAnimation />
-        <div>
+        <div className="aboutSection">
           <About />
+        </div>
+        <div>
+          <Projects />
         </div>
       </div>
     );
