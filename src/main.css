@@ -78,3 +78,59 @@
   background: lightblue;
   padding: 20px;
 }
+
+/* Projects section with media tags */
+.projectSection {
+  display: table;
+  /* display: block; */
+  table-layout: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.cards {
+  max-width: 345px;
+  margin: 20px;
+  display: table-cell;
+  padding: 10px;
+  min-width: 326px;
+}
+@media (max-width: 480px) {
+  .cards,
+  .projectSection {
+    display: contents !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  .cards,
+  .projectSection {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
+
+@media (max-width: 1320px) {
+  .projectSection,
+  .cards {
+    display: block;
+  }
+}
+
+@media (min-width: 1850px) {
+  .projectSection,
+  .cards {
+    width: 70%;
+  }
+}
+
+@media (min-width: 2200px) {
+  .projectSection,
+  .cards {
+    width: 60%;
+  }
+}
+/* End of projects */
