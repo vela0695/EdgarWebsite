@@ -34,6 +34,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html"
     }),
-    new CopyPlugin([{ from: "./favicon.ico" }])
+    new CopyPlugin([
+      { from: "./favicon.ico" },
+      { from: "./PSD.pdf" },
+      { from: "./BlockChain.pdf" }
+    ])
   ]
 };

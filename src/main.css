@@ -14,7 +14,7 @@
   max-width: 450px;
   padding: 5px;
   float: left;
-  border: 1px solid white;
+  border: 2px solid white;
   -webkit-animation: colorchange 40s infinite;
 }
 
@@ -87,6 +87,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  padding-bottom: 50px;
 }
 
 .cards {
@@ -134,3 +135,33 @@
   }
 }
 /* End of projects */
+
+.certificationSection {
+  /* display: table; */
+  display: block;
+  /* table-layout: fixed; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-bottom: 50px;
+  position: static;
+}
+
+.cert {
+  /* max-width: 345px; */
+  margin: 20px;
+  /* display: table-cell; */
+  padding: 10px;
+  min-width: 326px;
+  /* position: static;  */
+}
+
+.cert > div {
+  position: static !important;
+}
+
+.cert > div > canvas {
+  display: flex !important;
+  width: 63vw !important;
+  height: unset !important;
+}

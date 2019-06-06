@@ -3,6 +3,7 @@ import HeaderAnimation from "./HeaderAnimation";
 import Header from "./Header";
 import About from "./About";
 import Projects from "./Projects";
+import Accomplishments from "./Accomplishments";
 //import "../main.css";
 
 class App extends Component {
@@ -18,6 +19,9 @@ class App extends Component {
         </div>
         <div>
           <Projects />
+        </div>
+        <div>
+          <Accomplishments />
         </div>
       </div>
     );
