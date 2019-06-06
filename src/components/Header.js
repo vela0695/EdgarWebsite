@@ -132,7 +132,7 @@ class PrimarySearchAppBar extends React.Component {
         <MenuItem onClick={() => this.handleMobileMenuClose(3)}>
           <SocialIcon
             style={{ height: 45, width: 45 }}
-            url="mailto:edgarvelzz23@gmail.com"
+            url="mailto:edgarvelazz23@gmail.com"
             network="email"
           />
           <p>Contact Me</p>
