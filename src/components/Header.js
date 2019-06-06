@@ -82,7 +82,7 @@ class PrimarySearchAppBar extends React.Component {
       );
     }
     if (type == 3) {
-      window.open("mailto:edgarvelzz23@gmail.com");
+      window.open("mailto:edgarvelazz23@gmail.com");
     }
     this.setState({ mobileMoreAnchorEl: null });
   };
@@ -172,7 +172,7 @@ class PrimarySearchAppBar extends React.Component {
               </div>
               <div style={{ padding: "5px" }}>
                 <SocialIcon
-                  url="mailto:edgarvelzz23@gmail.com"
+                  url="mailto:edgarvelazz23@gmail.com"
                   network="email"
                 />
               </div>
