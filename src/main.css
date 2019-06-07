@@ -156,12 +156,38 @@
   /* position: static;  */
 }
 
+.resume {
+  /* max-width: 345px; */
+  margin: 20px;
+  /* display: table-cell; */
+  padding: 10px;
+  min-width: 326px;
+  /* position: static;  */
+}
+
 .cert > div {
+  position: static !important;
+}
+
+.resume > div {
   position: static !important;
 }
 
 .cert > div > canvas {
   display: flex !important;
-  width: 63vw !important;
+  width: 40vw !important;
+  position: inherit;
   height: unset !important;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid lightblue;
+}
+.resume > div > canvas {
+  display: flex !important;
+  width: 45vw !important;
+  position: inherit;
+  height: unset !important;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid lightblue;
 }

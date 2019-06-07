@@ -37,7 +37,8 @@ module.exports = {
     new CopyPlugin([
       { from: "./favicon.ico" },
       { from: "./PSD.pdf" },
-      { from: "./BlockChain.pdf" }
+      { from: "./BlockChain.pdf" },
+      { from: "./Resume.pdf" }
     ])
   ]
 };

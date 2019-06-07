@@ -4,6 +4,7 @@ import Header from "./Header";
 import About from "./About";
 import Projects from "./Projects";
 import Accomplishments from "./Accomplishments";
+import Resume from "./Resume";
 //import "../main.css";
 
 class App extends Component {
@@ -22,6 +23,9 @@ class App extends Component {
         </div>
         <div>
           <Accomplishments />
+        </div>
+        <div>
+          <Resume />
         </div>
       </div>
     );
