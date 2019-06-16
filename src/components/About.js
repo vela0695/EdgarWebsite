@@ -1,5 +1,15 @@
 import React from "react";
 import Edgar from "./fenway.jpg";
+import {
+  Link,
+  DirectLink,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller
+} from "react-scroll";
+
 class About extends React.Component {
   state = {
     anchorEl: null,
@@ -9,7 +19,9 @@ class About extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="header">About</h1>
+        <Element name="about">
+          <h1 className="header">About</h1>
+        </Element>
         <div className="centerAbout">
           <img className="fenwayPicture" src={Edgar} alt="Logo" />
           <div className="aboutFont">

@@ -1,5 +1,6 @@
 import React from "react";
 import { Document, Page } from "react-pdf";
+import { Element } from "react-scroll";
 //import pdfFile from "PSD.pdf";
 
 class Accomplishments extends React.Component {
@@ -13,7 +14,9 @@ class Accomplishments extends React.Component {
 
     return (
       <div>
-        <h1 className="header">Certifications</h1>
+        <Element name="certifications">
+          <h1 className="header">Certifications</h1>
+        </Element>
         <div className="centerAbout">
           <div className="certificationSection">
             <div>

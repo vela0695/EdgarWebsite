@@ -4,17 +4,24 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
-import Badge from "@material-ui/core/Badge";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
-import { fade } from "@material-ui/core/styles/colorManipulator";
 import { withStyles } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
 import MoreIcon from "@material-ui/icons/MoreVert";
 import { SocialIcon } from "react-social-icons";
 import "../main.css";
-
+import {
+  Link,
+  DirectLink,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller
+} from "react-scroll";
 const styles = theme => ({
+  /* CSS for the NAV bar */
   root: {
     width: "100%",
     position: "fixed",
@@ -24,18 +31,20 @@ const styles = theme => ({
   grow: {
     flexGrow: 1
   },
-  // menuButton: {
-  //   marginLeft: -12,
-  //   marginRight: 20
-  // },
+  /* Hmbuger Menu */
+  menuButton: {
+    marginLeft: -12,
+    marginRight: 20
+  },
   title: {
-    // display: "none",
     [theme.breakpoints.up("sm")]: {
       display: "block",
       fontSize: "1.9em !important",
-      fontFamily: "cursive !important"
+      fontFamily: "cursive !important",
+      cursor: "default !important"
     }
   },
+  /* Right Links */
   sectionDesktop: {
     display: "none",
     [theme.breakpoints.up("md")]: {
@@ -50,27 +59,44 @@ const styles = theme => ({
   }
 });
 
-class PrimarySearchAppBar extends React.Component {
+class Header extends React.Component {
   state = {
     anchorEl: null,
     mobileMoreAnchorEl: null,
-    showIcons: false
-  };
-
-  handleProfileMenuOpen = event => {
-    this.setState({ anchorEl: event.currentTarget });
+    hmobileMoreAnchorEl: null,
+    hamburgerMenu: false
   };
 
   handleMenuClose = () => {
-    this.setState({ anchorEl: null });
+    this.setState({ anchorEl: null, hamburgerMenu: false });
     this.handleMobileMenuClose();
   };
 
+  /* Opens links menu */
   handleMobileMenuOpen = event => {
-    console.log(event);
+    console.log(event.currentTarget);
     this.setState({ mobileMoreAnchorEl: event.currentTarget });
   };
 
+  /* Opens hamburger menu */
+  openHamburger = event => {
+    this.setState({
+      hamburgerMenu: !this.state.hamburgerMenu,
+      hmobileMoreAnchorEl: event.currentTarget
+    });
+  };
+
+  /* Scroll when clicking hamburger menu links */
+  moveToSection = target => {
+    scroller.scrollTo(target, {
+      duration: 1000,
+      smooth: true,
+      offset: window.innerWidth > 752 ? -64 : -56
+    });
+    this.setState({ anchorEl: null, hamburgerMenu: false });
+  };
+
+  /* Clicking on links */
   handleMobileMenuClose = type => {
     console.log(type);
     if (type == 1) {
@@ -82,29 +108,19 @@ class PrimarySearchAppBar extends React.Component {
       );
     }
     if (type == 3) {
-      window.open("mailto:edgarvelazz23@gmail.com");
+      window.open("mailto:vela0695@vandals.uidaho.edu");
     }
-    this.setState({ mobileMoreAnchorEl: null });
+    this.setState({
+      mobileMoreAnchorEl: null,
+      hmobileMoreAnchorEl: null,
+      hamburgerMenu: false
+    });
   };
 
   render() {
-    const { anchorEl, mobileMoreAnchorEl } = this.state;
+    const { anchorEl, mobileMoreAnchorEl, hmobileMoreAnchorEl } = this.state;
     const { classes } = this.props;
-    const isMenuOpen = Boolean(anchorEl);
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-    const renderMenu = (
-      <Menu
-        anchorEl={anchorEl}
-        anchorOrigin={{ vertical: "top", horizontal: "right" }}
-        transformOrigin={{ vertical: "top", horizontal: "right" }}
-        open={isMenuOpen}
-        onClose={this.handleMenuClose}
-      >
-        <MenuItem onClick={this.handleMenuClose}>Profile</MenuItem>
-        <MenuItem onClick={this.handleMenuClose}>My account</MenuItem>
-      </Menu>
-    );
 
     const renderMobileMenu = (
       <Menu
@@ -132,7 +148,7 @@ class PrimarySearchAppBar extends React.Component {
         <MenuItem onClick={() => this.handleMobileMenuClose(3)}>
           <SocialIcon
             style={{ height: 45, width: 45 }}
-            url="mailto:edgarvelazz23@gmail.com"
+            url="mailto:vela0695@vandals.uidaho.edu"
             network="email"
           />
           <p>Contact Me</p>
@@ -140,20 +156,53 @@ class PrimarySearchAppBar extends React.Component {
       </Menu>
     );
 
+    const renderHamburgerMenu = (
+      <Menu
+        disableAutoFocusItem={true}
+        anchorEl={hmobileMoreAnchorEl}
+        anchorOrigin={{ vertical: "top", horizontal: "right" }}
+        transformOrigin={{ vertical: "top", horizontal: "right" }}
+        open={this.state.hamburgerMenu}
+        onClose={this.handleMenuClose}
+      >
+        <MenuItem onClick={() => this.moveToSection("about")}>
+          {/*onClick={() => scroll.scrollToTop()}> */}
+          {/* <Link to="about" offset="100" spy={true} smooth={true} duration={500}> */}
+          <p>About</p> {/* </Link> */}
+        </MenuItem>
+
+        <MenuItem onClick={() => this.moveToSection("projects")}>
+          <p>Projects</p>
+        </MenuItem>
+        <MenuItem onClick={() => this.moveToSection("certifications")}>
+          <p>Certifications</p>
+        </MenuItem>
+        <MenuItem onClick={() => this.moveToSection("resume")}>
+          <p>Resume</p>
+        </MenuItem>
+        <MenuItem
+          onClick={() => {
+            window.open("mailto:vela0695@vandals.uidaho.edu");
+            this.setState({ anchorEl: null, hamburgerMenu: false });
+          }}
+        >
+          <p>Contact Me</p>
+        </MenuItem>
+      </Menu>
+    );
+
     return (
       <div className={classes.root}>
-        <AppBar position="static" style={{ backgroundColor: "lightblue" }}>
+        <AppBar position="static" style={{ backgroundColor: "navy" }}>
           <Toolbar>
-            {/*
-             Will take care of this once i have the content on the page
             <IconButton
               className={classes.menuButton}
               color="inherit"
               aria-label="Open drawer"
-              onClick={this.handleMobileMenuOpen}
+              onClick={this.openHamburger}
             >
               <MenuIcon />
-            </IconButton> */}
+            </IconButton>
             <Typography
               className={classes.title}
               variant="h6"
@@ -172,7 +221,7 @@ class PrimarySearchAppBar extends React.Component {
               </div>
               <div style={{ padding: "5px" }}>
                 <SocialIcon
-                  url="mailto:edgarvelazz23@gmail.com"
+                  url="mailto:vela0695@vandals.uidaho.edu"
                   network="email"
                 />
               </div>
@@ -188,15 +237,15 @@ class PrimarySearchAppBar extends React.Component {
             </div>
           </Toolbar>
         </AppBar>
-        {/* {renderMenu} */}
         {renderMobileMenu}
+        {renderHamburgerMenu}
       </div>
     );
   }
 }
 
-PrimarySearchAppBar.propTypes = {
+Header.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(PrimarySearchAppBar);
+export default withStyles(styles)(Header);

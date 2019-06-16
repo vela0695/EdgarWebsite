@@ -7,6 +7,16 @@
   margin-top: 65px;
 }
 
+@media (max-width: 600px) {
+  .cool3D {
+    width: auto;
+    height: 730px;
+    display: block;
+    margin-left: auto;
+    margin-top: 65px;
+  }
+}
+
 .fenwayPicture {
   border-radius: 360px;
   min-width: 287px;
@@ -74,9 +84,13 @@
 }
 
 .header {
+  color: #fff;
   text-align: center;
-  background: lightblue;
-  padding: 20px;
+  background: navy;
+  padding: 10px;
+  font-family: cursive;
+  cursor: default;
+  height: 35px;
 }
 
 /* Projects section with media tags */
@@ -152,16 +166,17 @@
   margin: 20px;
   /* display: table-cell; */
   padding: 10px;
-  min-width: 326px;
+  /* min-width: 326px; */
+  max-width: 100% !important;
   /* position: static;  */
 }
 
 .resume {
-  /* max-width: 345px; */
+  max-width: 100% !important;
   margin: 20px;
   /* display: table-cell; */
   padding: 10px;
-  min-width: 326px;
+  /* min-width: 326px; */
   /* position: static;  */
 }
 
@@ -180,14 +195,16 @@
   height: unset !important;
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid lightblue;
+  border: 2px solid navy;
+  border-radius: 25px;
 }
 .resume > div > canvas {
   display: flex !important;
-  width: 45vw !important;
+  width: 35vw !important;
   position: inherit;
   height: unset !important;
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid lightblue;
+  border: 2px solid navy;
+  border-radius: 25px;
 }

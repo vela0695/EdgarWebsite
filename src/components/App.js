@@ -5,8 +5,6 @@ import About from "./About";
 import Projects from "./Projects";
 import Accomplishments from "./Accomplishments";
 import Resume from "./Resume";
-//import "../main.css";
-
 class App extends Component {
   render() {
     return (

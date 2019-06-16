@@ -8,11 +8,14 @@ import Pong from "./Pong.png";
 import chasingTheEnd from "./chasingTheEnd.png";
 import Biodiesel from "./Biodiesel.png";
 import Movie from "./Movie.png";
+import { Element } from "react-scroll";
 
 function Projects() {
   return (
     <div>
-      <h1 className="header">Projects</h1>
+      <Element name="projects">
+        <h1 className="header">Projects</h1>
+      </Element>
       <div className="projectSection">
         <Card className="cards">
           <CardMedia
