@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-
 import threeEntryPoint from "./threejs/threeEntryPoint";
-//import "./header.css"
 
+// Continue learning how this animation works
 export default class Header extends Component {
   componentDidMount() {
     threeEntryPoint(this.threeRootElement);

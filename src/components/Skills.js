@@ -1,30 +1,28 @@
 import React from "react";
 import { Document, Page } from "react-pdf";
+import pdfFile from "../../Resume.pdf";
 import { Element } from "react-scroll";
 
-class Accomplishments extends React.Component {
-  state = {
-    pageNumber: 1
-  };
+// These imports help remove the console errors
+import { pdfjs } from "react-pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${
+  pdfjs.version
+}/pdf.worker.js`;
+
+class Skills extends React.Component {
+  state = { pageNumber: 1 };
 
   render() {
     const { pageNumber } = this.state;
-
     return (
       <div>
-        <Element name="certifications">
-          <h1 className="header">Certifications</h1>
+        <Element name="resume">
+          <h1 className="header">Skills</h1>
         </Element>
         <div className="centerAbout">
           <div className="certificationSection">
             <div>
-              <Document className="cert" file="PSD.pdf">
-                <Page pageNumber={pageNumber} />
-              </Document>
-            </div>
-
-            <div>
-              <Document className="cert" file="BlockChain.pdf">
+              <Document className="resume" file={pdfFile}>
                 <Page pageNumber={pageNumber} />
               </Document>
             </div>
@@ -35,4 +33,4 @@ class Accomplishments extends React.Component {
   }
 }
 
-export default Accomplishments;
+export default Skills;

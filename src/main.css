@@ -87,16 +87,15 @@
   color: #fff;
   text-align: center;
   background: navy;
-  padding: 10px;
+  padding: 5px;
   font-family: cursive;
   cursor: default;
-  height: 35px;
+  vertical-align: middle;
 }
 
 /* Projects section with media tags */
 .projectSection {
   display: table;
-  /* display: block; */
   table-layout: fixed;
   margin-left: auto;
   margin-right: auto;
@@ -151,9 +150,7 @@
 /* End of projects */
 
 .certificationSection {
-  /* display: table; */
   display: block;
-  /* table-layout: fixed; */
   margin-left: auto;
   margin-right: auto;
   width: 80%;
@@ -162,22 +159,15 @@
 }
 
 .cert {
-  /* max-width: 345px; */
   margin: 20px;
-  /* display: table-cell; */
   padding: 10px;
-  /* min-width: 326px; */
   max-width: 100% !important;
-  /* position: static;  */
 }
 
 .resume {
   max-width: 100% !important;
   margin: 20px;
-  /* display: table-cell; */
   padding: 10px;
-  /* min-width: 326px; */
-  /* position: static;  */
 }
 
 .cert > div {

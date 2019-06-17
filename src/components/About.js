@@ -1,5 +1,4 @@
 import React from "react";
-import Edgar from "./fenway.jpg";
 import {
   Link,
   DirectLink,
@@ -9,12 +8,10 @@ import {
   scrollSpy,
   scroller
 } from "react-scroll";
+import Edgar from "./fenway.jpg"; //Replace this with my picture
 
 class About extends React.Component {
-  state = {
-    anchorEl: null,
-    mobileMoreAnchorEl: null
-  };
+  state = {};
 
   render() {
     return (
@@ -23,7 +20,7 @@ class About extends React.Component {
           <h1 className="header">About</h1>
         </Element>
         <div className="centerAbout">
-          <img className="fenwayPicture" src={Edgar} alt="Logo" />
+          <img className="fenwayPicture" src={Edgar} alt="Fenway Pictire" />
           <div className="aboutFont">
             <h1 style={{ padding: "10px", display: "flex" }}>Hi! I'm Edgar</h1>
             <h2 style={{ padding: "10px", display: "flex" }}>

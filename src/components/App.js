@@ -5,6 +5,7 @@ import About from "./About";
 import Projects from "./Projects";
 import Accomplishments from "./Accomplishments";
 import Resume from "./Resume";
+import Skills from "./Skills";
 class App extends Component {
   render() {
     return (
@@ -25,6 +26,9 @@ class App extends Component {
         <div>
           <Resume />
         </div>
+        {/* <div>
+          <Skills />
+        </div> */}
       </div>
     );
   }

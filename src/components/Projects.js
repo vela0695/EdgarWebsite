@@ -23,7 +23,7 @@ function Projects() {
             alt="Chasing the End"
             height="200"
             image={chasingTheEnd}
-            title="Contemplative Reptile"
+            title="Chasing the End"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
@@ -51,13 +51,14 @@ function Projects() {
             Visit Repo
           </Button>
         </Card>
+
         <Card className="cards">
           <CardMedia
             component="img"
             alt="Pong"
             height="200"
             image={Pong}
-            title="Contemplative Reptile"
+            title="Pong"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
@@ -82,13 +83,14 @@ function Projects() {
             Visit Repo
           </Button>
         </Card>
+
         <Card className="cards">
           <CardMedia
             component="img"
             alt="Biodiesel"
             height="200"
             image={Biodiesel}
-            title="Contemplative Reptile"
+            title="Biodiesel"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
@@ -105,17 +107,15 @@ function Projects() {
               current market price.
             </Typography>
           </CardContent>
-          {/* <Button size="small" color="primary" style={{ position: "static" }}>
-            Visit Repo
-          </Button> */}
         </Card>
+
         <Card className="cards">
           <CardMedia
             component="img"
-            alt="Movie"
+            alt="Movie DB"
             height="200"
             image={Movie}
-            title="Contemplative Reptile"
+            title="Movie DB"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
@@ -143,5 +143,4 @@ function Projects() {
     </div>
   );
 }
-
 export default Projects;

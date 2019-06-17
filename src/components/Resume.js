@@ -2,6 +2,7 @@ import React from "react";
 import { Document, Page } from "react-pdf";
 import pdfFile from "../../Resume.pdf";
 import { Element } from "react-scroll";
+
 // These imports help remove the console errors
 import { pdfjs } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${
@@ -9,7 +10,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 }/pdf.worker.js`;
 
 class Resume extends React.Component {
-  state = { numPages: 1, pageNumber: 1 };
+  state = { pageNumber: 1 };
 
   render() {
     const { pageNumber } = this.state;

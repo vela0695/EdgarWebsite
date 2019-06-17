@@ -31,7 +31,7 @@ const styles = theme => ({
   grow: {
     flexGrow: 1
   },
-  /* Hmbuger Menu */
+  /* Hambuger Menu */
   menuButton: {
     marginLeft: -12,
     marginRight: 20
@@ -74,7 +74,6 @@ class Header extends React.Component {
 
   /* Opens links menu */
   handleMobileMenuOpen = event => {
-    console.log(event.currentTarget);
     this.setState({ mobileMoreAnchorEl: event.currentTarget });
   };
 
@@ -98,7 +97,6 @@ class Header extends React.Component {
 
   /* Clicking on links */
   handleMobileMenuClose = type => {
-    console.log(type);
     if (type == 1) {
       window.open("https://github.com/vela0695");
     }
@@ -121,7 +119,7 @@ class Header extends React.Component {
     const { anchorEl, mobileMoreAnchorEl, hmobileMoreAnchorEl } = this.state;
     const { classes } = this.props;
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
+    /* Menu with links on top right */
     const renderMobileMenu = (
       <Menu
         disableAutoFocusItem={true}
@@ -166,11 +164,8 @@ class Header extends React.Component {
         onClose={this.handleMenuClose}
       >
         <MenuItem onClick={() => this.moveToSection("about")}>
-          {/*onClick={() => scroll.scrollToTop()}> */}
-          {/* <Link to="about" offset="100" spy={true} smooth={true} duration={500}> */}
-          <p>About</p> {/* </Link> */}
+          <p>About</p>
         </MenuItem>
-
         <MenuItem onClick={() => this.moveToSection("projects")}>
           <p>Projects</p>
         </MenuItem>
@@ -211,6 +206,7 @@ class Header extends React.Component {
             >
               Edgar Colin
             </Typography>
+            {/* Pushes icons to the right corner  */}
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
               <div style={{ padding: "5px" }}>
@@ -237,8 +233,9 @@ class Header extends React.Component {
             </div>
           </Toolbar>
         </AppBar>
-        {renderMobileMenu}
+        {/* Both menu's when they're open */}
         {renderHamburgerMenu}
+        {renderMobileMenu}
       </div>
     );
   }
