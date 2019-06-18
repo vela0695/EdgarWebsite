@@ -26,9 +26,9 @@ class App extends Component {
         <div>
           <Resume />
         </div>
-        {/* <div>
+        <div>
           <Skills />
-        </div> */}
+        </div>
       </div>
     );
   }

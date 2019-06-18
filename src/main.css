@@ -198,3 +198,15 @@
   border: 2px solid navy;
   border-radius: 25px;
 }
+
+.icon {
+  height: 8vw;
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .icon {
+    height: 8vw;
+    padding: 10px;
+  }
+}

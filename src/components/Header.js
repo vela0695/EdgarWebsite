@@ -175,6 +175,9 @@ class Header extends React.Component {
         <MenuItem onClick={() => this.moveToSection("resume")}>
           <p>Resume</p>
         </MenuItem>
+        <MenuItem onClick={() => this.moveToSection("skills")}>
+          <p>Skills</p>
+        </MenuItem>
         <MenuItem
           onClick={() => {
             window.open("mailto:vela0695@vandals.uidaho.edu");
