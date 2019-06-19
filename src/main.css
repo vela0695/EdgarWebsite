@@ -1,7 +1,7 @@
 /* 3D image */
 .cool3D {
   width: auto;
-  height: 969px;
+  height: 940px;
   display: block;
   margin-left: auto;
   margin-top: 65px;
@@ -180,33 +180,44 @@
 
 .cert > div > canvas {
   display: flex !important;
-  width: 40vw !important;
-  position: inherit;
-  height: unset !important;
-  margin-left: auto;
-  margin-right: auto;
-  border: 2px solid navy;
-  border-radius: 25px;
-}
-.resume > div > canvas {
-  display: flex !important;
   width: 35vw !important;
   position: inherit;
   height: unset !important;
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid navy;
+  /* border: 2px solid navy; */
   border-radius: 25px;
+  box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
+  /* max-width: 50%; */
+}
+.resume > div > canvas {
+  display: flex !important;
+  width: 31vw !important;
+  position: inherit;
+  height: unset !important;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 2px solid navy; */
+  border-radius: 25px;
+  box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
+  /* max-width: 50%; */
 }
 
 .icon {
-  height: 8vw;
-  padding: 20px;
+  height: 5vw;
+  padding-left: 33%;
+  /* padding: 20px; */
+  padding-right: 33%;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 767px) {
   .icon {
-    height: 8vw;
+    height: 6vw;
     padding: 10px;
   }
+}
+
+.react-pdf__Page__textContent {
+  position: fixed !important;
 }
