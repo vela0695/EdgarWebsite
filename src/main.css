@@ -78,6 +78,13 @@
   width: 80%;
 }
 
+.centerPDF {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
 .aboutSection {
   display: -webkit-box;
   padding-bottom: 50px;
@@ -220,4 +227,64 @@
 
 .react-pdf__Page__textContent {
   position: fixed !important;
+}
+
+@media (max-width: 650px) {
+  .cert > div > canvas {
+    display: flex !important;
+    width: auto !important;
+    position: inherit;
+    height: 22vh !important;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
+  }
+  .resume > div > canvas {
+    display: flex !important;
+    height: 37vh !important;
+    position: inherit;
+    width: unset !important;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
+  }
+
+  .centerPDF {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 1024px) {
+  .cert > div > canvas {
+    display: flex !important;
+    width: auto !important;
+    position: inherit;
+    height: 37vh !important;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
+  }
+  .resume > div > canvas {
+    display: flex !important;
+    height: 66vh !important;
+    position: inherit;
+    width: unset !important;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
+  }
+
+  .centerPDF {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 }

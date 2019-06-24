@@ -19,7 +19,7 @@ class Resume extends React.Component {
         <Element name="resume">
           <h1 className="header">Resume</h1>
         </Element>
-        <div className="centerAbout">
+        <div className="centerPDF">
           <div className="certificationSection">
             <div>
               <Document className="resume" file={pdfFile}>

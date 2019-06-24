@@ -15,7 +15,7 @@ class Accomplishments extends React.Component {
         <Element name="certifications">
           <h1 className="header">Certifications</h1>
         </Element>
-        <div className="centerAbout">
+        <div className="centerPDF">
           <div className="certificationSection">
             <div>
               <Document className="cert" file="PSD.pdf">
