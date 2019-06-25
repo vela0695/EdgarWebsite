@@ -9,6 +9,14 @@ import Menu from "@material-ui/core/Menu";
 import { withStyles } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
 import MoreIcon from "@material-ui/icons/MoreVert";
+import {
+  SentimentSatisfied,
+  PictureInPicture,
+  ViewModule,
+  PermIdentity,
+  DeveloperMode,
+  ContactMail
+} from "@material-ui/icons";
 import { SocialIcon } from "react-social-icons";
 import "../main.css";
 import {
@@ -164,18 +172,23 @@ class Header extends React.Component {
         onClose={this.handleMenuClose}
       >
         <MenuItem onClick={() => this.moveToSection("about")}>
+          <SentimentSatisfied />
           <p>About</p>
         </MenuItem>
         <MenuItem onClick={() => this.moveToSection("projects")}>
+          <ViewModule />
           <p>Projects</p>
         </MenuItem>
         <MenuItem onClick={() => this.moveToSection("certifications")}>
+          <PictureInPicture />
           <p>Certifications</p>
         </MenuItem>
         <MenuItem onClick={() => this.moveToSection("resume")}>
+          <PermIdentity />
           <p>Resume</p>
         </MenuItem>
         <MenuItem onClick={() => this.moveToSection("skills")}>
+          <DeveloperMode />
           <p>Skills</p>
         </MenuItem>
         <MenuItem
@@ -184,6 +197,7 @@ class Header extends React.Component {
             this.setState({ anchorEl: null, hamburgerMenu: false });
           }}
         >
+          <ContactMail />
           <p>Contact Me</p>
         </MenuItem>
       </Menu>

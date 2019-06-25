@@ -2,6 +2,7 @@ import React from "react";
 import { Document, Page } from "react-pdf";
 import pdfFile from "../../Resume.pdf";
 import { Element } from "react-scroll";
+import Button from "@material-ui/core/Button";
 
 // These imports help remove the console errors
 import { pdfjs } from "react-pdf";
@@ -24,6 +25,14 @@ class Resume extends React.Component {
             <div>
               <Document className="resume" file={pdfFile}>
                 <Page pageNumber={pageNumber} />
+                <Button
+                  style={{ margin: "0 auto", top: "10px", display: "block" }}
+                  variant="contained"
+                  color="primary"
+                  onClick={() => window.open(pdfFile)}
+                >
+                  Download
+                </Button>
               </Document>
             </div>
           </div>
