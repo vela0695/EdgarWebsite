@@ -25,14 +25,15 @@ class Resume extends React.Component {
             <div>
               <Document className="resume" file={pdfFile}>
                 <Page pageNumber={pageNumber} />
-                <Button
-                  style={{ margin: "0 auto", top: "10px", display: "block" }}
-                  variant="contained"
-                  color="primary"
-                  onClick={() => window.open(pdfFile)}
-                >
-                  Download
-                </Button>
+                <a href={pdfFile} download="Resume" className="downloadLink">
+                  <Button
+                    style={{ margin: "0 auto", top: "10px", display: "block" }}
+                    variant="contained"
+                    color="primary"
+                  >
+                    Download
+                  </Button>
+                </a>
               </Document>
             </div>
           </div>

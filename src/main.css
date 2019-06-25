@@ -288,3 +288,7 @@
     width: 100%;
   }
 }
+
+.downloadLink {
+  text-decoration: none !important;
+}
