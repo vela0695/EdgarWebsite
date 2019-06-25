@@ -232,9 +232,9 @@
 @media (max-width: 650px) {
   .cert > div > canvas {
     display: flex !important;
-    width: auto !important;
+    width: 60vw !important;
     position: inherit;
-    height: 22vh !important;
+    height: auto !important;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -242,9 +242,9 @@
   }
   .resume > div > canvas {
     display: flex !important;
-    height: 37vh !important;
+    height: auto !important;
     position: inherit;
-    width: unset !important;
+    width: 61vw !important;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -262,9 +262,9 @@
 @media (min-width: 651px) and (max-width: 1024px) {
   .cert > div > canvas {
     display: flex !important;
-    width: auto !important;
+    width: 55vw !important;
     position: inherit;
-    height: 37vh !important;
+    height: auto !important;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
