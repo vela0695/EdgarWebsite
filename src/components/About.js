@@ -8,7 +8,8 @@ import {
   scrollSpy,
   scroller
 } from "react-scroll";
-import Edgar from "./fenway.jpg"; //Replace this with my picture
+// import Edgar from "./fenway.jpg"; //Replace this with my picture
+import Edgar from "./Edgar.jpg";
 
 class About extends React.Component {
   state = {};
