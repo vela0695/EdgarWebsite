@@ -87,7 +87,7 @@
 
 .aboutSection {
   display: -webkit-box;
-  padding-bottom: 50px;
+  padding-bottom: 5px;
 }
 
 .header {
@@ -107,7 +107,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  padding-bottom: 50px;
+  padding-bottom: 5px;
 }
 
 .cards {
@@ -161,7 +161,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  padding-bottom: 50px;
+  padding-bottom: 5px;
   position: static;
 }
 
@@ -215,10 +215,14 @@
   padding-left: 33%;
   /* padding: 20px; */
   padding-right: 33%;
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
 }
 
 @media (max-width: 767px) {
+  .text {
+    font-size: 10px;
+  }
+
   .icon {
     height: 6vw;
     padding: 10px;
@@ -291,4 +295,16 @@
 
 .downloadLink {
   text-decoration: none !important;
+}
+
+.text {
+  color: navy;
+  margin-left: auto;
+  visibility: hidden;
+  text-align: center;
+  margin-right: auto;
+}
+
+.cell:hover .text {
+  visibility: visible;
 }

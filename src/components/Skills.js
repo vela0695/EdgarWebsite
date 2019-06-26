@@ -32,37 +32,47 @@ class Skills extends React.Component {
             <table>
               <tbody>
                 <tr>
-                  <td>
+                  <td className="cell">
                     <img className="icon" src={cplus} />
+                    <div className="text">C++</div>
                   </td>
-                  <td>
+                  <td className="cell">
                     <img className="icon" src={csharp} />
+                    <div className="text">C#</div>
                   </td>
-                  <td>
+                  <td className="cell">
                     <img className="icon" src={css} />
+                    <div className="text">CSS</div>
                   </td>
-                  <td>
+                  <td className="cell">
                     <img className="icon" src={git} />
+                    <div className="text">Git</div>
                   </td>
-                  <td>
+                  <td className="cell">
                     <img className="icon" src={html} />
+                    <div className="text">HTML</div>
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td className="cell">
                     <img className="icon" src={react} />
+                    <div className="text">React</div>
                   </td>
-                  <td>
+                  <td className="cell">
                     <img className="icon" src={js} />
+                    <div className="text">JavaScript</div>
                   </td>
-                  <td>
+                  <td className="cell">
                     <img className="icon" src={java} />
+                    <div className="text">Java</div>
                   </td>
-                  <td>
+                  <td className="cell">
                     <img className="icon" src={postgresql} />
+                    <div className="text">PostgreSQL</div>
                   </td>
-                  <td>
+                  <td className="cell">
                     <img className="icon" src={ts} />
+                    <div className="text">TypeScript</div>
                   </td>
                 </tr>
               </tbody>
