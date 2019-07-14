@@ -4,10 +4,10 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import Pong from "./Pong.png";
-import chasingTheEnd from "./chasingTheEnd.png";
-import Biodiesel from "./Biodiesel.png";
-import Movie from "./Movie.png";
+import Pong from "./images/Pong.png";
+import chasingTheEnd from "./images/chasingTheEnd.png";
+import Biodiesel from "./images/Biodiesel.png";
+import Movie from "./images/Movie.png";
 import { Element } from "react-scroll";
 
 function Projects() {

@@ -19,15 +19,8 @@ import {
 } from "@material-ui/icons";
 import { SocialIcon } from "react-social-icons";
 import "../main.css";
-import {
-  Link,
-  DirectLink,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller
-} from "react-scroll";
+import { animateScroll as scroll, scroller } from "react-scroll";
+
 const styles = theme => ({
   /* CSS for the NAV bar */
   root: {
@@ -250,14 +243,12 @@ class Header extends React.Component {
             </div>
           </Toolbar>
         </AppBar>
-        {/* Both menu's when they're open */}
         {renderHamburgerMenu}
         {renderMobileMenu}
       </div>
     );
   }
 }
-
 Header.propTypes = {
   classes: PropTypes.object.isRequired
 };

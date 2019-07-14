@@ -1,15 +1,6 @@
 import React from "react";
-import {
-  Link,
-  DirectLink,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller
-} from "react-scroll";
-// import Edgar from "./fenway.jpg"; //Replace this with my picture
-import Edgar from "./Edgar.jpg";
+import { Element, animateScroll as scroll } from "react-scroll";
+import Edgar from "./images/Edgar.jpg";
 
 class About extends React.Component {
   state = {};

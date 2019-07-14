@@ -192,10 +192,8 @@
   height: unset !important;
   margin-left: auto;
   margin-right: auto;
-  /* border: 2px solid navy; */
   border-radius: 25px;
   box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
-  /* max-width: 50%; */
 }
 .resume > div > canvas {
   display: flex !important;
@@ -204,18 +202,14 @@
   height: unset !important;
   margin-left: auto;
   margin-right: auto;
-  /* border: 2px solid navy; */
   border-radius: 25px;
   box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
-  /* max-width: 50%; */
 }
 
 .icon {
   height: 5vw;
   padding-left: 33%;
-  /* padding: 20px; */
   padding-right: 33%;
-  /* padding-bottom: 40px; */
 }
 
 @media (max-width: 767px) {

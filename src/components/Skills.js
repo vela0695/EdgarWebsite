@@ -7,7 +7,6 @@ import git from "./skills/git.png";
 import html from "./skills/html.png";
 import java from "./skills/java.png";
 import js from "./skills/javascript.png";
-import nodejs from "./skills/nodejs.png";
 import postgresql from "./skills/postgresql.svg";
 import react from "./skills/react.png";
 import ts from "./skills/typescript.jpg";
