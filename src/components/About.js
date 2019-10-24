@@ -1,6 +1,6 @@
 import React from "react";
 import { Element, animateScroll as scroll } from "react-scroll";
-import Edgar from "./images/Edgar.jpg";
+import Edgar from "./images/Edgar.jpeg";
 
 class About extends React.Component {
   state = {};
