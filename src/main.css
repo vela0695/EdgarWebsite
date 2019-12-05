@@ -302,3 +302,8 @@
 .cell:hover .text {
   visibility: visible;
 }
+
+/* Code added to help the rendering of the PDF files */
+.react-pdf__Page__textContent {
+  display: none;
+}
