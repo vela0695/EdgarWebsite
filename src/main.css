@@ -69,6 +69,7 @@
   line-height: 2em;
   text-transform: uppercase;
   color: #333;
+  font-family: monospace;
 }
 
 .centerAbout {
