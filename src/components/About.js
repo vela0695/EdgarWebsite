@@ -19,10 +19,10 @@ class About extends React.Component {
               I'm an associate consulatant @ Fenway Group
             </h2>
             <h3 style={{ padding: "10px", display: "grid" }}>
-              I am a senior at the University of Idaho. I am studying B.S. in
-              Computer Science with a minor in Math. Please feel free to scroll
+              I recently graduated from the University of Idaho with my Bachelors in Computer Science
+              and a minor in Math. Please feel free to scroll
               through my page to view my resume or get in contact with me. My
-              projects section includes a list of my most resent projects and
+              projects section includes a list of my most recent work and
               technologies used. I’ve also included a section to view my resume
               and certifications.
             </h3>
