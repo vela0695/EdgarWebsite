@@ -48,7 +48,7 @@ function Projects() {
               window.open("https://github.com/CS383-Dream-Team/Chasing-the-End")
             }
           >
-            Visit Repo
+            Repository
           </Button>
         </Card>
 
@@ -80,7 +80,7 @@ function Projects() {
             style={{ position: "static" }}
             onClick={() => window.open("https://github.com/vela0695/Pong")}
           >
-            Visit Repo
+            Repository
           </Button>
         </Card>
 
@@ -107,6 +107,16 @@ function Projects() {
               current market price.
             </Typography>
           </CardContent>
+          <Button
+            size="small"
+            color="primary"
+            style={{ position: "static" }}
+            onClick={() =>
+              window.open("https://biodieseleducation.org/simulator/")
+            }
+          >
+            Website
+          </Button>
         </Card>
 
         <Card className="cards">
@@ -136,7 +146,7 @@ function Projects() {
             style={{ position: "static" }}
             onClick={() => window.open("https://github.com/vela0695/MovieDB")}
           >
-            Visit Repo
+            Repository
           </Button>
         </Card>
       </div>
