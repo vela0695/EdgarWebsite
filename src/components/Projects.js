@@ -7,6 +7,7 @@ import Typography from "@material-ui/core/Typography";
 import Pong from "./images/Pong.png";
 import chasingTheEnd from "./images/chasingTheEnd.png";
 import Biodiesel from "./images/Biodiesel.png";
+import monitorCity from "./images/monitoringCity.png";
 import Movie from "./images/Movie.png";
 import { Element } from "react-scroll";
 
@@ -122,29 +123,37 @@ function Projects() {
         <Card className="cards">
           <CardMedia
             component="img"
-            alt="Movie DB"
+            alt="Monitoring City"
             height="200"
-            image={Movie}
-            title="Movie DB"
+            image={monitorCity}
+            title="Monitoring City"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Movie DB
+              Monitoring City
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Movie DB is a simple react application that uses a movies DB API
-              to obtain json object when searching. This was a simple
-              application that was used to learn how create-react-app worked and
-              tried to implement a search functionality. The application will
-              continue to grow and I plan to incorporate a database to it to
-              expand my knowledge on databases and queries.
+              Built using Unicon, Monitoring city takes as input a Unicon
+              program and a .dat file. With this information Monitoring City can
+              create a building for every function in the program. During
+              run-time it keeps track of the time spent in each function and
+              shows that by having the buildings grow. The base of the building
+              also lights up white whenever that function is active. The more
+              times that function gets called the brighter the white gets. The
+              buildings are also divided by user defined functions and Unicon
+              functions. The user can move around the city as the building are
+              growing and the functions are being called. Once the program
+              exits, a list of all the functions and total time spent on each
+              function is logged in the console for the user.
             </Typography>
           </CardContent>
           <Button
             size="small"
             color="primary"
             style={{ position: "static" }}
-            onClick={() => window.open("https://github.com/vela0695/MovieDB")}
+            onClick={() =>
+              window.open("https://github.com/vela0695/Timing-Functions-City")
+            }
           >
             Repository
           </Button>
