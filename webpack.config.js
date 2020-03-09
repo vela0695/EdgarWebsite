@@ -25,7 +25,25 @@ module.exports = {
         test: /\.(jpe?g|png|gif|svg|pdf)$/i,
         loader: [
           "file-loader?hash=sha512&digest=hex&name=[hash].[ext]",
-          "image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false"
+          // This fixed the depricated issues warnings
+          {
+            loader: "image-webpack-loader",
+            query: {
+              mozjpeg: {
+                progressive: true
+              },
+              gifsicle: {
+                interlaced: false
+              },
+              optipng: {
+                optimizationLevel: 4
+              },
+              pngquant: {
+                quality: "75-90",
+                speed: 3
+              }
+            }
+          }
         ]
       }
     ]
