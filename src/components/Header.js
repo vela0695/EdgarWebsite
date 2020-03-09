@@ -107,7 +107,7 @@ class Header extends React.Component {
       );
     }
     if (type == 3) {
-      window.open("mailto:vela0695@vandals.uidaho.edu");
+      window.open("mailto:Edgar.VColin@gmail.com");
     }
     this.setState({
       mobileMoreAnchorEl: null,
@@ -147,7 +147,7 @@ class Header extends React.Component {
         <MenuItem onClick={() => this.handleMobileMenuClose(3)}>
           <SocialIcon
             style={{ height: 45, width: 45 }}
-            url="mailto:vela0695@vandals.uidaho.edu"
+            url="mailto:Edgar.VColin@gmail.com"
             network="email"
           />
           <p>Contact Me</p>
@@ -186,7 +186,7 @@ class Header extends React.Component {
         </MenuItem>
         <MenuItem
           onClick={() => {
-            window.open("mailto:vela0695@vandals.uidaho.edu");
+            window.open("mailto:Edgar.VColin@gmail.com");
             this.setState({ anchorEl: null, hamburgerMenu: false });
           }}
         >
@@ -227,7 +227,7 @@ class Header extends React.Component {
               </div>
               <div style={{ padding: "5px" }}>
                 <SocialIcon
-                  url="mailto:vela0695@vandals.uidaho.edu"
+                  url="mailto:Edgar.VColin@gmail.com"
                   network="email"
                 />
               </div>
