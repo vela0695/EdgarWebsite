@@ -56,7 +56,8 @@ module.exports = {
       { from: "./favicon.ico" },
       { from: "./PSD.pdf" },
       { from: "./BlockChain.pdf" },
-      { from: "./Resume.pdf" }
+      { from: "./Resume.pdf" },
+      { from: "./src/components/data", to: "data" }
     ])
   ]
 };

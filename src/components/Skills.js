@@ -1,21 +1,9 @@
 import React from "react";
 import { Element } from "react-scroll";
-import cplus from "./skills/c++.png";
-import csharp from "./skills/csh.png";
-import css from "./skills/css.png";
-import git from "./skills/git.png";
-import html from "./skills/html.png";
-import java from "./skills/java.png";
-import js from "./skills/javascript.png";
-import postgresql from "./skills/postgresql.svg";
-import react from "./skills/react.png";
-import ts from "./skills/typescript.jpg";
 
 // These imports help remove the console errors
 import { pdfjs } from "react-pdf";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${
-  pdfjs.version
-}/pdf.worker.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 class Skills extends React.Component {
   state = {};
@@ -32,45 +20,75 @@ class Skills extends React.Component {
               <tbody>
                 <tr>
                   <td className="cell">
-                    <img className="icon" src={cplus} />
+                    <img
+                      className="icon"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/300px-ISO_C%2B%2B_Logo.svg.png"
+                    />
                     <div className="text">C++</div>
                   </td>
                   <td className="cell">
-                    <img className="icon" src={csharp} />
+                    <img
+                      className="icon"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/C_Sharp_logo.svg/300px-C_Sharp_logo.svg.png"
+                    />
                     <div className="text">C#</div>
                   </td>
                   <td className="cell">
-                    <img className="icon" src={css} />
+                    <img
+                      className="icon"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/300px-CSS3_logo_and_wordmark.svg.png"
+                    />
                     <div className="text">CSS</div>
                   </td>
                   <td className="cell">
-                    <img className="icon" src={git} />
+                    <img
+                      className="icon"
+                      src="https://labviewwiki.org/w/images/3/3d/Logo.git.png"
+                    />
                     <div className="text">Git</div>
                   </td>
                   <td className="cell">
-                    <img className="icon" src={html} />
+                    <img
+                      className="icon"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
+                    />
                     <div className="text">HTML</div>
                   </td>
                 </tr>
                 <tr>
                   <td className="cell">
-                    <img className="icon" src={react} />
+                    <img
+                      className="icon"
+                      src="https://cdn.auth0.com/blog/react-js/react.png"
+                    />
                     <div className="text">React</div>
                   </td>
                   <td className="cell">
-                    <img className="icon" src={js} />
+                    <img
+                      className="icon"
+                      src="https://www.w3schools.com/whatis/img_js.png"
+                    />
                     <div className="text">JavaScript</div>
                   </td>
                   <td className="cell">
-                    <img className="icon" src={java} />
+                    <img
+                      className="icon"
+                      src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/283px-Java_programming_language_logo.svg.png"
+                    />
                     <div className="text">Java</div>
                   </td>
                   <td className="cell">
-                    <img className="icon" src={postgresql} />
+                    <img
+                      className="icon"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/440px-Postgresql_elephant.svg.png"
+                    />
                     <div className="text">PostgreSQL</div>
                   </td>
                   <td className="cell">
-                    <img className="icon" src={ts} />
+                    <img
+                      className="icon"
+                      src="https://miro.medium.com/max/1187/0*6xyhbXKN3Zu0htJc.png"
+                    />
                     <div className="text">TypeScript</div>
                   </td>
                 </tr>

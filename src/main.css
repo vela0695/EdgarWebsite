@@ -107,7 +107,7 @@
   table-layout: fixed;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 100%;
   padding-bottom: 5px;
 }
 
@@ -131,7 +131,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -145,14 +145,14 @@
 @media (min-width: 1850px) {
   .projectSection,
   .cards {
-    width: 70%;
+    width: 100%;
   }
 }
 
 @media (min-width: 2200px) {
   .projectSection,
   .cards {
-    width: 60%;
+    width: 100%;
   }
 }
 /* End of projects */
