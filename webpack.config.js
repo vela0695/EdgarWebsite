@@ -22,7 +22,7 @@ module.exports = {
         use: ["style-loader", "css-loader"]
       },
       {
-        test: /\.(jpe?g|png|gif|svg|pdf)$/i,
+        test: /\.(svg|pdf)$/i,
         loader: [
           "file-loader?hash=sha512&digest=hex&name=[hash].[ext]",
           // This fixed the depricated issues warnings
@@ -45,6 +45,14 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.(jpe?g|png|gif)$/,
+        loader: "url-loader",
+        options: {
+          // Images larger than 10 KB won’t be inlined
+          limit: 10 * 1024
+        }
       }
     ]
   },

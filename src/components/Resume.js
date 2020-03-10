@@ -1,14 +1,11 @@
 import React from "react";
 import { Document, Page } from "react-pdf";
-import pdfFile from "../../Resume.pdf";
 import { Element } from "react-scroll";
 import Button from "@material-ui/core/Button";
 
 // These imports help remove the console errors
 import { pdfjs } from "react-pdf";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${
-  pdfjs.version
-}/pdf.worker.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 class Resume extends React.Component {
   state = { pageNumber: 1 };
@@ -23,10 +20,10 @@ class Resume extends React.Component {
         <div className="centerPDF">
           <div className="certificationSection">
             <div>
-              <Document className="resume" file={pdfFile}>
+              <Document className="resume" file="Resume.pdf">
                 <Page pageNumber={pageNumber} />
                 <a
-                  href={pdfFile}
+                  href="Resume.pdf"
                   download="EdgarVColin"
                   className="downloadLink"
                 >
