@@ -1,7 +1,7 @@
 /* 3D image */
 .cool3D {
   width: auto;
-  height: 940px;
+  height: 700px;
   display: block;
   margin-left: auto;
   margin-top: 65px;
@@ -65,11 +65,11 @@
 }
 
 .aboutFont {
-  font-size: 11px;
+  font-size: 13px;
   line-height: 2em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #333;
-  font-family: monospace;
+  font-family: "Raleway", cursive;
 }
 
 .centerAbout {
@@ -96,9 +96,11 @@
   text-align: center;
   background: navy;
   padding: 5px;
-  font-family: cursive;
   cursor: default;
   vertical-align: middle;
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
 }
 
 /* Projects section with media tags */
@@ -307,4 +309,10 @@
 /* Code added to help the rendering of the PDF files */
 .react-pdf__Page__textContent {
   display: none;
+}
+
+.text-title {
+  font-family: "Caveat", cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
 }

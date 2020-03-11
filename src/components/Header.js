@@ -41,7 +41,7 @@ const styles = theme => ({
     [theme.breakpoints.up("sm")]: {
       display: "block",
       fontSize: "1.9em !important",
-      fontFamily: "cursive !important",
+      fontFamily: "Raleway, cursive !important",
       cursor: "default !important"
     }
   },

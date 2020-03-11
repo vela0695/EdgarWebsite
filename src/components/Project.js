@@ -31,7 +31,7 @@ const Project = ({ proj }) => {
           style={{ position: "static" }}
           onClick={() => window.open(proj.link)}
         >
-          Repository
+          {proj.button}
         </Button>
       </Card>
     </Grid>
