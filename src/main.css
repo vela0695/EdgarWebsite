@@ -122,12 +122,6 @@
   padding: 10px;
   min-width: 326px;
 }
-@media (max-width: 480px) {
-  .cards,
-  .projectSection {
-    display: contents !important;
-  }
-}
 
 @media (max-width: 1300px) {
   .cards,
