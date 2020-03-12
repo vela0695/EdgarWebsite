@@ -70,6 +70,7 @@
   /* text-transform: uppercase; */
   color: #333;
   font-family: "Raleway", cursive;
+  background-color: #fff;
 }
 
 .centerAbout {
@@ -89,6 +90,7 @@
 .aboutSection {
   display: -webkit-box;
   padding-bottom: 5px;
+  background-color: #fff;
 }
 
 .header {
@@ -295,7 +297,7 @@
 }
 
 .text {
-  color: navy;
+  color: #fff;
   margin-left: auto;
   visibility: hidden;
   text-align: center;
@@ -315,4 +317,8 @@
   font-family: "Caveat", cursive;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
+}
+
+.container {
+  background: linear-gradient(100deg, #bdc3c7 50%, #2c3e50 0);
 }

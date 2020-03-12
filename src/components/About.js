@@ -19,12 +19,15 @@ class About extends React.Component {
               I'm an associate consulatant @ Fenway Group
             </h2>
             <h3 style={{ padding: "10px", display: "grid" }}>
-              I recently graduated from the University of Idaho with my Bachelors in Computer Science
-              and a minor in Math. Please feel free to scroll
-              through my page to view my resume or get in contact with me. My
-              projects section includes a list of my most recent work and
-              technologies used. I’ve also included a section to view my resume
-              and certifications.
+              I recently graduated from the University of Idaho with a Bachelors
+              of Science in Computer Science and a minor in Mathematics. I
+              started working as an Associate Consultant for Fenway Group in the
+              Spring semester of 2018, and this is where I discovered my passion
+              for web developing. Since then, I have been part of two client
+              projects, two Internal applications, built my personal website,
+              and a car shopping application for my brother. I feel confident in
+              my skills as a web developer and I am also ready to learn new
+              technologies.
             </h3>
           </div>
         </div>

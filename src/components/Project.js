@@ -26,6 +26,7 @@ const Project = ({ proj }) => {
           </Typography>
         </CardContent>
         <Button
+          disabled={proj.disabled}
           size="small"
           color="primary"
           style={{ position: "static" }}

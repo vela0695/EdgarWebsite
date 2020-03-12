@@ -9,7 +9,7 @@ import Skills from "./Skills";
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <div>
           <Header />
         </div>
