@@ -4,7 +4,7 @@ export const projects = [
     title: "Custom Car Shop",
     detail:
       "Custom Car Shop is an e-commerce website that was designed to help my brother advertise and sell his custom cars as his sales continue to rise. This website is built using React and JavaScript. I also used Google’s Firebase storage to store all of the images and information about the cars. Netlify was the choice for deployment due to  many of the free services they currently offer. For example, my contact page is wired to Netlify’s back end in order to take advantage of their email service.",
-    link: "https://ronaldo2015-shop.netlify.com/",
+    link: "https://scalemodelpolice.netlify.com/",
     image: "./data/images/carShop.png",
     button: "Website",
     disabled: false
