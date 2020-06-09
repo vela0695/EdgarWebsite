@@ -4,7 +4,7 @@ export const projects = [
     title: "Custom Car Shop",
     detail:
       "Custom Car Shop is an e-commerce website that was designed to help my brother advertise and sell his custom cars as his sales continue to rise. This website is built using React and JavaScript. I also used Google’s Firebase storage to store all of the images and information about the cars. Netlify was the choice for deployment due to  many of the free services they currently offer. For example, my contact page is wired to Netlify’s back end in order to take advantage of their email service.",
-    link: "https://scalemodelpolice.netlify.com/",
+    link: "https://scalemodelpolice.netlify.app/",
     image: "./data/images/carShop.png",
     button: "Website",
     disabled: false,
@@ -69,5 +69,15 @@ export const projects = [
     image: "./data/images/Pong.png",
     button: "Repository",
     disabled: false,
+  },
+  {
+    id: 8,
+    title: "SEO Spider",
+    detail:
+      "SEO Spider is a Search Engine Optimizer. The front end composed of JavaScript and React consists of a search box where the user can enter the site he wishes to crawl. The backend composed of Python, crawls through all of the links and returns the metadata displayed on the table. This is a client project; thus all of the metadata has been requested by the client. My resposibilities have been setting up the initial server file and building out all of the front end.",
+    link: "https://github.com/vela0695/Pong",
+    image: "./data/images/SEOSpider.png",
+    button: "Repository",
+    disabled: true,
   },
 ];
