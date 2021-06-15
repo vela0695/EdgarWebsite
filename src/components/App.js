@@ -23,9 +23,9 @@ class App extends Component {
         <div>
           <Accomplishments />
         </div>
-        <div>
+        {/* <div>
           <Resume />
-        </div>
+        </div> */}
         <div>
           <Skills />
         </div>

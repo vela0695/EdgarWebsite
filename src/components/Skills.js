@@ -29,7 +29,7 @@ class Skills extends React.Component {
                   <td className="cell">
                     <img
                       className="icon"
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/C_Sharp_logo.svg/300px-C_Sharp_logo.svg.png"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/C_Sharp_wordmark.svg/120px-C_Sharp_wordmark.svg.png"
                     />
                     <div className="text">C#</div>
                   </td>
